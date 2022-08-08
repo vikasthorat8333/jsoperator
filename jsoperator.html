@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js operator</title>
+
+</head>
+<body>
+    <h2> Operator</h2>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <script>
+        //Arithmetic operator use +, -, * / //
+        var x = 5;
+        var y = 2;
+        var z = x + y;
+        document.getElementById("demo").innerHTML=z;
+
+
+        // comparison opertor use ==, ===, !=, !==, >, >=, <, <=.//
+        var a = y < x;
+        document.getElementById("demo1").innerHTML=a;
+
+
+        //Bitwise operator use &, |, ^, ~, <<, >>, >>>.//
+         var b = ~x;
+         document.getElementById("demo2").innerHTML=b;
+
+
+         //Logical operator use &&, ||, !.//
+         var c = x && y;
+         document.getElementById("demo3").innerHTML=c;
+
+         //Assignment operator use =, +=, -=; *=, /*, &=.//
+         x+=4
+         document.getElementById("demo4").innerHTML=x;
+
+         //condition operator use //
+         var d = (x > y) ? 100 : 200;
+         document.getElementById("demo5").innerHTML=d;
+
+         // Type of operator   //
+           var str = "hello";
+           var result1 = (typeof str =="string" ? "str is string" : "str is numeric");
+           var result2 = (typeof x == "string" ? "x is string"  :  "x is numeric");
+           document.write("<b> typeof operator</b>");
+           document.write("<br>");
+           document.write(result1);
+           document.write("<br>");
+           document.write(result2);
+
+           
+      // sring operator//
+
+
+          var string1 = "hello";
+          var string2 = "js ";
+          var string = string1 +" " +string2;
+          document.write("<br>");
+          document.write("<b>string concatination operator<b>");
+            document.write("<br>");
+                document.write(string);
+                document.write("<br>");
+                    document.write("hello " + y );
+                    document.write("<br>");
+                        string += "operators";
+                        document.write("<b> assignment operators as string concatination operator</b>");
+                            document.write("<br>");
+                                document.write(string);
+
+    </script>
+
+    
+</body>
+</html>
